@@ -1,15 +1,15 @@
-const mongoose = require("mongoose")
+// const mongoose = require("mongoose")
 
 
-const  dashboardSchema = new mongoose.Schema({
+// const  dashboardSchema = new mongoose.Schema({
 
-    metamask_address: String
+//     metamask_address: String
   
      
-},{ collection: 'FINANCIAL_DATA',
-versionKey: false //here
-})
+// },{ collection: 'FINANCIAL_DATA',
+// versionKey: false //here
+// })
 
-// const Notice = new mongoose.model('Notice', noticeSchema);
+// // const Notice = new mongoose.model('Notice', noticeSchema);
 
-module.exports =  mongoose.model('FINANCIAL_DATA', dashboardSchema) ;
+// module.exports =  mongoose.model('FINANCIAL_DATA', dashboardSchema) ;

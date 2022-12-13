@@ -17,6 +17,10 @@ const openRoute = require('./Routes/openWIthdrawRoute')
 const closedRoute = require('./Routes/closedWithdrawRoute')
 const accountsRoute = require('./Routes/getAccountsListRoute')
 const Notice = require("./models/Notice")
+// new api
+const registerRoute = require("./Routes/registrationRoute")
+const signinRoute = require("./Routes/signinRoute")
+const formRoute = require("./Routes/loginFormRoute")
 const formidable = require('express-formidable');
 const mongoose = require("mongoose");
 const jwt = require("jsonwebtoken");
@@ -47,6 +51,11 @@ app.use('/v1/rmlist', rmListRoute )
 app.use('/v1/updateuser', profileRoute )
 app.use('/v1/update_withdraw', withdrawRoute )
 app.use('/v1/accounts_list', accountsRoute )
+//newapi
+app.use('/register', registerRoute )
+app.use('/signin', signinRoute )
+app.use('/loginform', formRoute )
+
 app.get("/", checkAuth, function(req, res){
     res.send( "working");
 });

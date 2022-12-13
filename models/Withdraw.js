@@ -1,18 +1,18 @@
-const mongoose = require("mongoose")
+// const mongoose = require("mongoose")
 
 
-const  withdrawSchema = new mongoose.Schema({
+// const  withdrawSchema = new mongoose.Schema({
 
-    metamask_address: String,
-    date_time: Date,
-    value: Number,
-    status: String,
-    hash: String,
+//     metamask_address: String,
+//     date_time: Date,
+//     value: Number,
+//     status: String,
+//     hash: String,
 
-},{ collection: 'WITHDRAW_REQUESTS',
-versionKey: false //here
-})
+// },{ collection: 'WITHDRAW_REQUESTS',
+// versionKey: false //here
+// })
 
-// const Notice = new mongoose.model('Notice', noticeSchema);
+// // const Notice = new mongoose.model('Notice', noticeSchema);
 
-module.exports =  mongoose.model('WITHDRAW_REQUESTS', withdrawSchema) ;
+// module.exports =  mongoose.model('WITHDRAW_REQUESTS', withdrawSchema) ;

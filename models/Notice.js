@@ -2,8 +2,8 @@ const mongoose = require("mongoose")
 const  noticeSchema = new mongoose.Schema({  
    date_time: Date,
    public_notification: String
-},{ collection: 'PUBLIC_NOTIFICATIONS',
+},{ collection: 'test',
 versionKey: false //here
 })
 
-module.exports =  mongoose.model('PUBLIC_NOTIFICATIONS', noticeSchema);
+module.exports =  mongoose.model('test', noticeSchema);
